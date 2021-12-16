@@ -7,16 +7,16 @@ before_install:
 
 script: 
   #- docker run chinedunsidinanya/my-test-react-frontend:latest npm run test -- --coverage
-  - docker run -e CI=true chinedunsidinanya/my-test-react-frontend:latest npm run test
+  - docker run -e CI=true chinedunsidinanya/my-test-react-frontend:latest npm run test -- --coverage
 
 
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "docker-react-application-4"
-  env: "Dockerreactapplication4-env"
+  app: "docker-react-application"
+  env: "Dockerreactapplication-env"
   bucket_name: "elasticbeanstalk-us-east-1-811298199222"
-  bucket_path: "docker-react-application-4"
+  bucket_path: "docker-react-application"
   
   on:
     branch: main
