@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Changes have been made to feature branch and we need to merge this completely with main branch
+          Learn React
         </a>
       </header>
     </div>
